@@ -20,11 +20,11 @@
 
 ## Sobre mí
 
-Diseña interfaces al nivel de las mejores startups del mundo. Su obsesión: que cada pixel tenga propósito.
+Diseño interfaces al nivel de las mejores startups del mundo. Mi obsesión: que cada pixel tenga propósito.
 
-En **mezo** lidera la dirección de producto y la experiencia de usuario, con la convicción de que un POS bien diseñado debería sentirse como un buen mostrador — limpio, ordenado, listo para trabajar.
+En **mezo** lidero la dirección de producto y la experiencia de usuario, con la convicción de que un POS bien diseñado debería sentirse como un buen mostrador — limpio, ordenado, listo para trabajar.
 
-No tiene título universitario. Lo que sabe lo aprendió construyendo cosas, leyendo documentación y rompiendo cosas en producción.
+No tengo título universitario. Lo que se lo aprendí construyendo cosas, leyendo documentación y rompiendo cosas en producción.
 
 ---
 

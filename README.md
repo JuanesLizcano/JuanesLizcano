@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./hero.svg" width="860" alt="Juan Esteban Lizcano — construyo páginas web y software. Bogotá, Colombia." />
+  <img src="./hero.svg?v=2" width="860" alt="Juan Esteban Lizcano — construyo páginas web y software. Bogotá, Colombia." />
 </div>
 
 <br />
@@ -8,8 +8,8 @@
 
 <table>
   <tr>
-    <td width="400" valign="top"><img src="./retrato.svg" width="396" alt="Retrato en ASCII" /></td>
-    <td width="456" valign="top"><img src="./stack.svg" width="452" alt="Ficha: qué hago y con qué" /></td>
+    <td width="400" valign="top"><img src="./retrato.svg?v=2" width="396" alt="Retrato en ASCII" /></td>
+    <td width="456" valign="top"><img src="./stack.svg?v=2" width="452" alt="Ficha: qué hago y con qué" /></td>
   </tr>
 </table>
 

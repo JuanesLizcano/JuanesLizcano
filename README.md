@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./hero.svg?v=2" width="860" alt="Juan Esteban Lizcano — construyo páginas web y software. Bogotá, Colombia." />
+  <img src="./cabecera.svg" width="860" alt="Juan Esteban Lizcano — construyo páginas web y software. Bogotá, Colombia." />
 </div>
 
 <br />
@@ -8,8 +8,8 @@
 
 <table>
   <tr>
-    <td width="400" valign="top"><img src="./retrato.svg?v=2" width="396" alt="Retrato en ASCII" /></td>
-    <td width="456" valign="top"><img src="./stack.svg?v=2" width="452" alt="Ficha: qué hago y con qué" /></td>
+    <td width="400" valign="top"><img src="./retrato.svg" width="396" alt="Retrato en ASCII" /></td>
+    <td width="456" valign="top"><img src="./ficha.svg" width="452" alt="Ficha: qué hago y con qué" /></td>
   </tr>
 </table>
 
@@ -67,5 +67,5 @@ navegador.
 <br />
 
 <div align="center">
-  <sub><code>hero.svg</code>, <code>retrato.svg</code> y <code>stack.svg</code> están hechos a mano en este repo —<br />SVG con animación propia, sin servicios de terceros ni fuentes externas.</sub>
+  <sub><code>cabecera.svg</code>, <code>retrato.svg</code> y <code>ficha.svg</code> están hechos a mano en este repo —<br />SVG con animación propia, sin servicios de terceros ni fuentes externas.</sub>
 </div>

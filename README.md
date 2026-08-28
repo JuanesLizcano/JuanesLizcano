@@ -1,84 +1,76 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:ff2200,50:ff8800,100:ffdd00&height=200&section=header&text=Juan%20Esteban%20Lizcano&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=42&desc=Bogot%C3%A1%2C%20Colombia&descSize=18&descAlignY=64&descColor=eeeeee" width="100%" />
-</div>
-
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=DM+Sans&weight=500&size=20&pause=1200&color=ff8800&center=true&vCenter=true&width=620&lines=Construyo+software;Founder+%40+mezo+%E2%80%94+POS+SaaS+para+cafes+y+restaurantes;React+%2B+Java+%2B+Spring+Boot+%2B+PostgreSQL;Autodidacta.+Sin+titulo.+Con+producci%C3%B3n." alt="Typing SVG" />
+  <img src="./hero.svg" width="860" alt="Juan Esteban Lizcano — Founder · mezo POS · Bogotá, Colombia" />
 </div>
 
 <br />
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=JuanesLizcano&color=ff3333&style=flat-square&label=visitas" />
-  &nbsp;&nbsp;
-  <a href="https://github.com/JuanesLizcano/mezo-pos">
-    <img src="https://img.shields.io/badge/construyendo-mezo%20POS-ff3333?style=flat-square&logoColor=white" />
-  </a>
+  <a href="https://mezopos.com"><img src="https://img.shields.io/badge/mezopos.com-C8903F?style=flat-square&labelColor=080706" alt="mezopos.com" /></a>
+  &nbsp;
+  <a href="mailto:juaneslizcanom@gmail.com"><img src="https://img.shields.io/badge/escribirme-080706?style=flat-square&labelColor=080706&color=7A6A58" alt="correo" /></a>
 </div>
 
----
+<br />
 
-## Sobre mí
+<h3><code>juanes@github ~ $ neofetch</code></h3>
 
-Diseño interfaces al nivel de las mejores startups del mundo. Mi obsesión: que cada pixel tenga propósito.
+<img src="./stack.svg" width="860" alt="Ficha técnica: qué construyo y con qué" />
 
-En **mezo** lidero la dirección de producto y la experiencia de usuario, con la convicción de que un POS bien diseñado debería sentirse como un buen mostrador — limpio, ordenado, listo para trabajar.
+<br />
 
-No tengo título universitario. Lo que se lo aprendí construyendo cosas, leyendo documentación y rompiendo cosas en producción.
+<h3><code>juanes@github ~ $ cat sobre-mi.txt</code></h3>
 
----
+Construyo **mezo**, un punto de venta para cafeterías, bares y restaurantes en Colombia.
+No es un proyecto de portafolio: hay negocios cobrando con él todos los días, emitiendo
+sus tickets y cuadrando su caja.
 
-## Stack
+Hago producto, diseño y código. Me interesa menos la lista de tecnologías que la pregunta
+que hay detrás de cada pantalla: *¿esto le sirve a alguien que está de pie, con fila,
+a las 8 de la noche?*
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=react,tailwind,ts,js,java,spring,postgres,aws,git,vercel&theme=dark&perline=10" />
-</div>
+No tengo título. Lo que sé lo aprendí construyendo, leyendo documentación y rompiendo
+cosas en producción — y aprendiendo a no volver a romperlas.
 
----
+<br />
 
-## Qué estoy construyendo
+<h3><code>juanes@github ~ $ cat como-trabajo.txt</code></h3>
 
-<a href="https://github.com/JuanesLizcano/mezo-pos">
-  <img align="right" width="380" src="https://github-readme-stats.vercel.app/api/pin/?username=JuanesLizcano&repo=mezo-pos&hide_border=true&bg_color=0d1117&title_color=ff8800&text_color=8b949e&icon_color=ff3333" />
-</a>
+**El diseño no es la capa de encima.** Un POS mal diseñado le cuesta segundos a un cajero
+en cada venta, y esos segundos son la fila de la puerta. Cada decisión visual tiene que
+justificarse en el mostrador, no en Dribbble.
 
-**[mezo-pos](https://github.com/JuanesLizcano/mezo-pos)** — sistema POS SaaS para cafés, restaurantes y bares en Colombia.
+**Lo que toca la plata se prueba, no se supone.** Un total mal calculado o una venta que
+se puede editar después de cobrada no son bugs de interfaz: son plata. Van con reglas en
+la base de datos, no solo con validación en el navegador.
 
-- **Frontend** React 19 · Tailwind CSS · Framer Motion · Recharts
-- **Backend** Java 21 · Spring Boot · JWT
-- **Base de datos** PostgreSQL
-- **Pagos** Wompi · Facturación electrónica DIAN
-- **IA** Anthropic Claude API para reportes
-- **Deploy** Vercel (frontend) · Render (backend)
+**Lo que falla, que falle ruidoso.** Prefiero un error que se vea a un "guardado ✓" que
+mienta. Un recibo que no se manda tiene que decirlo; un cierre de caja que no cuadra,
+también.
 
-<br clear="right" />
+<br />
 
----
+<h3><code>juanes@github ~ $ ls -la ./proyectos</code></h3>
 
-<div align="center">
+| | |
+|---|---|
+| **[mezo](https://mezopos.com)** | POS SaaS para gastronomía en Colombia. Mesas, cocina, inventario con recetas, menú QR con autopedido, facturación DIAN y reportes en lenguaje natural. En producción. |
+| **SmartICFES** | Plataforma de preparación para el examen de Estado. |
+| **CRUX** | PWA de hábitos — un lado personal, más pequeño y más terco. |
 
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=JuanesLizcano&show_icons=true&hide_border=true&bg_color=0d1117&icon_color=ff8800&title_color=ff3333&text_color=8b949e&rank_icon=github&hide=issues&count_private=true)](https://github.com/JuanesLizcano)
-&nbsp;
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JuanesLizcano&layout=compact&hide_border=true&bg_color=0d1117&title_color=ff3333&text_color=8b949e&langs_count=6)](https://github.com/JuanesLizcano)
+<br />
 
-</div>
-
-<div align="center">
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=JuanesLizcano&bg_color=0d1117&color=ff8800&line=ff3333&point=ffdd00&area_color=2d0500&area=true&hide_border=true)](https://github.com/JuanesLizcano)
-
-</div>
-
----
+<h3><code>juanes@github ~ $ ./contributions.sh</code></h3>
 
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JuanesLizcano/JuanesLizcano/output/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JuanesLizcano/JuanesLizcano/output/github-contribution-grid-snake.svg" />
-    <img alt="snake" src="https://raw.githubusercontent.com/JuanesLizcano/JuanesLizcano/output/github-contribution-grid-snake-dark.svg" />
+    <img alt="Gráfico de contribuciones" src="https://raw.githubusercontent.com/JuanesLizcano/JuanesLizcano/output/github-contribution-grid-snake-dark.svg" />
   </picture>
 </div>
 
+<br />
+
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0:ff2200,50:ff8800,100:ffdd00&height=100&section=footer" width="100%" />
+  <sub><code>hero.svg</code> y <code>stack.svg</code> están hechos a mano en este repo — SVG con animación propia, sin servicios de terceros ni fuentes externas.</sub>
 </div>

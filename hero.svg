@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="210" viewBox="0 0 860 210" role="img" aria-label="Juan Esteban Lizcano — Founder de mezo POS, Bogotá, Colombia">
+  <title>Juan Esteban Lizcano — Founder · mezo POS</title>
+
+  <!--
+    Animado con SMIL + CSS DENTRO del propio SVG. GitHub sirve el archivo por su
+    proxy (camo) y lo pinta con <img>, asi que el JavaScript NO corre pero las
+    animaciones internas SI. Por lo mismo NO se pueden cargar fuentes externas
+    (Google Fonts no llega): se usan familias del sistema a proposito.
+    Todas las animaciones terminan con fill="freeze" — se ven una vez y quedan
+    quietas, en vez de un bucle que marea al que solo pasaba por aqui.
+  -->
+
+  <defs>
+    <linearGradient id="oro" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#C8903F"/>
+      <stop offset="55%"  stop-color="#E4B878"/>
+      <stop offset="100%" stop-color="#C8903F"/>
+    </linearGradient>
+
+    <radialGradient id="brasa" cx="86%" cy="18%" r="58%">
+      <stop offset="0%"   stop-color="#C8903F" stop-opacity="0.20"/>
+      <stop offset="55%"  stop-color="#C8903F" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#C8903F" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Cortina que descubre el nombre de izquierda a derecha. -->
+    <clipPath id="revelaNombre">
+      <rect x="46" y="72" width="0" height="52">
+        <animate attributeName="width" from="0" to="600"
+                 begin="0.55s" dur="1.15s"
+                 calcMode="spline" keySplines="0.22 1 0.36 1" fill="freeze"/>
+      </rect>
+    </clipPath>
+
+    <clipPath id="revelaPrompt">
+      <rect x="46" y="34" width="0" height="22">
+        <animate attributeName="width" from="0" to="330"
+                 begin="0.1s" dur="0.75s"
+                 calcMode="spline" keySplines="0.4 0 0.2 1" fill="freeze"/>
+      </rect>
+    </clipPath>
+
+    <clipPath id="revelaPie">
+      <rect x="46" y="140" width="0" height="24">
+        <animate attributeName="width" from="0" to="640"
+                 begin="1.5s" dur="0.9s"
+                 calcMode="spline" keySplines="0.22 1 0.36 1" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .mono  { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .serif { font-family: Georgia, "Times New Roman", "Nimbus Roman", serif; }
+    .tenue { fill: #7A6A58; }
+    .crema { fill: #F4ECD8; }
+    .oro   { fill: #C8903F; }
+
+    /* El cursor si late para siempre: es lo unico vivo cuando todo lo demas
+       ya se congelo, y es lo que hace que el bloque se sienta una terminal.
+       Arranca en 0 y el retardo lo mantiene invisible hasta que el texto
+       termino de entrar (2.35s). */
+    @keyframes latir { 0%, 44% { opacity: 0.9 } 45%, 100% { opacity: 0 } }
+    .cursor { opacity: 0; animation: latir 1.06s steps(1) 2.35s infinite; }
+  </style>
+
+  <!-- Lienzo -->
+  <rect width="860" height="210" rx="14" fill="#080706"/>
+  <rect width="860" height="210" rx="14" fill="url(#brasa)"/>
+  <rect x="0.5" y="0.5" width="859" height="209" rx="14" fill="none" stroke="#2A2520"/>
+
+  <!-- Tres puntos de ventana, discretos -->
+  <g opacity="0.55">
+    <circle cx="26" cy="20" r="4" fill="#3A322A"/>
+    <circle cx="42" cy="20" r="4" fill="#3A322A"/>
+    <circle cx="58" cy="20" r="4" fill="#3A322A"/>
+  </g>
+
+  <!-- Prompt -->
+  <g clip-path="url(#revelaPrompt)">
+    <text x="46" y="50" class="mono tenue" font-size="13" letter-spacing="0.06em">
+      juanes@github <tspan class="oro">~</tspan> $ whoami
+    </text>
+  </g>
+
+  <!-- Nombre -->
+  <g clip-path="url(#revelaNombre)">
+    <text x="46" y="112" class="serif crema" font-size="42" letter-spacing="-0.02em">
+      Juan Esteban <tspan fill="url(#oro)" font-style="italic">Lizcano</tspan>
+    </text>
+  </g>
+
+  <!-- Regla dorada que se dibuja -->
+  <rect x="46" y="128" width="0" height="2" rx="1" fill="url(#oro)" opacity="0.75">
+    <animate attributeName="width" from="0" to="150"
+             begin="1.35s" dur="0.7s"
+             calcMode="spline" keySplines="0.22 1 0.36 1" fill="freeze"/>
+  </rect>
+
+  <!-- Pie -->
+  <g clip-path="url(#revelaPie)">
+    <text x="46" y="158" class="mono tenue" font-size="13.5" letter-spacing="0.02em">
+      Founder <tspan class="oro">·</tspan> mezo POS <tspan class="oro">·</tspan> Bogotá, Colombia
+    </text>
+  </g>
+
+  <!-- Cursor. Un solo rectangulo: el retardo del CSS lo mantiene invisible
+       hasta que el resto termino, y de ahi en adelante late solo. -->
+  <rect x="46" y="176" width="9" height="16" rx="1" fill="#C8903F" class="cursor"/>
+</svg>

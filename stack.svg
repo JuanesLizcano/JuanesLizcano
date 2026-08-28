@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="330" viewBox="0 0 860 330" role="img" aria-label="Ficha técnica: qué construyo, con qué, y en qué estado está">
+  <title>juanes@github ~ $ neofetch</title>
+
+  <!--
+    Ficha estilo neofetch, escrita a mano. Cada linea entra con su propio
+    retardo (SMIL, fill="freeze") para que se lea como si alguien la estuviera
+    imprimiendo, y despues queda quieta.
+
+    Sin fuentes externas ni servicios de terceros: GitHub sirve esto por su
+    proxy y no carga nada de fuera.
+  -->
+
+  <defs>
+    <linearGradient id="oro2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#C8903F"/>
+      <stop offset="100%" stop-color="#E4B878"/>
+    </linearGradient>
+    <radialGradient id="brasa2" cx="10%" cy="86%" r="55%">
+      <stop offset="0%"   stop-color="#C8903F" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="#C8903F" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    .mono  { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .serif { font-family: Georgia, "Times New Roman", "Nimbus Roman", serif; }
+    .k     { fill: #C8903F; font-size: 13px; letter-spacing: 0.02em; }
+    .v     { fill: #E0D5BF; font-size: 13px; }
+    .t     { fill: #7A6A58; font-size: 12px; }
+    .fila  { opacity: 0; }
+
+    /* Un solo keyframe reutilizado; lo que cambia por fila es el retardo. */
+    @keyframes entra {
+      from { opacity: 0; transform: translateX(-8px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    .fila { animation: entra 0.5s cubic-bezier(.22,1,.36,1) forwards; }
+    .d1  { animation-delay: 0.35s }  .d2  { animation-delay: 0.45s }
+    .d3  { animation-delay: 0.55s }  .d4  { animation-delay: 0.65s }
+    .d5  { animation-delay: 0.75s }  .d6  { animation-delay: 0.85s }
+    .d7  { animation-delay: 0.95s }  .d8  { animation-delay: 1.05s }
+    .d9  { animation-delay: 1.15s }  .d10 { animation-delay: 1.25s }
+    .d11 { animation-delay: 1.35s }  .d12 { animation-delay: 1.45s }
+  </style>
+
+  <rect width="860" height="330" rx="14" fill="#080706"/>
+  <rect width="860" height="330" rx="14" fill="url(#brasa2)"/>
+  <rect x="0.5" y="0.5" width="859" height="329" rx="14" fill="none" stroke="#2A2520"/>
+
+  <!-- Encabezado -->
+  <text x="32" y="38" class="mono t">juanes@github <tspan fill="#C8903F">~</tspan> $ neofetch</text>
+  <line x1="32" y1="52" x2="828" y2="52" stroke="#2A2520"/>
+
+  <!-- ── Columna izquierda: marca ─────────────────────────────────────────── -->
+  <g class="fila d1">
+    <text x="32" y="112" class="serif" font-size="52" font-style="italic" fill="url(#oro2)">mezo</text>
+    <text x="34" y="136" class="mono t" font-size="11" letter-spacing="0.22em">PUNTO DE VENTA</text>
+    <text x="34" y="152" class="mono t" font-size="11" letter-spacing="0.22em">COLOMBIA</text>
+  </g>
+
+  <g class="fila d3">
+    <rect x="32" y="176" width="176" height="1" fill="#2A2520"/>
+    <text x="32" y="200" class="mono" font-size="11.5" fill="#7A6A58">en producción con</text>
+    <text x="32" y="220" class="mono" font-size="13" fill="#E0D5BF">clientes reales</text>
+    <text x="32" y="244" class="mono" font-size="11.5" fill="#7A6A58">cobrando todos</text>
+    <text x="32" y="262" class="mono" font-size="11.5" fill="#7A6A58">los días</text>
+  </g>
+
+  <!-- Separador vertical -->
+  <line x1="248" y1="72" x2="248" y2="292" stroke="#2A2520"/>
+
+  <!-- ── Columna derecha: la ficha ────────────────────────────────────────── -->
+  <g transform="translate(284, 0)">
+    <g class="fila d2">
+      <text x="0" y="82" class="mono k">Ahora</text>
+      <text x="120" y="82" class="mono v">Founder · mezo POS</text>
+    </g>
+    <g class="fila d3">
+      <text x="0" y="106" class="mono k">Rol</text>
+      <text x="120" y="106" class="mono v">Producto, diseño y código</text>
+    </g>
+    <g class="fila d4">
+      <text x="0" y="130" class="mono k">Frontend</text>
+      <text x="120" y="130" class="mono v">React 19 · Tailwind · Framer Motion</text>
+    </g>
+    <g class="fila d5">
+      <text x="0" y="154" class="mono k">Backend</text>
+      <text x="120" y="154" class="mono v">Supabase · Postgres · RLS · Edge (Deno)</text>
+    </g>
+    <g class="fila d6">
+      <text x="0" y="178" class="mono k">Pagos</text>
+      <text x="120" y="178" class="mono v">Wompi · facturación DIAN</text>
+    </g>
+    <g class="fila d7">
+      <text x="0" y="202" class="mono k">IA</text>
+      <text x="120" y="202" class="mono v">Claude API — reportes en lenguaje natural</text>
+    </g>
+    <g class="fila d8">
+      <text x="0" y="226" class="mono k">Deploy</text>
+      <text x="120" y="226" class="mono v">Vercel · PWA instalable · offline</text>
+    </g>
+
+    <g class="fila d9">
+      <line x1="0" y1="246" x2="500" y2="246" stroke="#2A2520"/>
+    </g>
+
+    <g class="fila d10">
+      <text x="0" y="270" class="mono k">Obsesión</text>
+      <text x="120" y="270" class="mono v">que cada pixel tenga un motivo</text>
+    </g>
+    <g class="fila d11">
+      <text x="0" y="292" class="mono k">Título</text>
+      <text x="120" y="292" class="mono" font-size="13" fill="#7A6A58">ninguno — todo aprendido construyendo</text>
+    </g>
+  </g>
+</svg>

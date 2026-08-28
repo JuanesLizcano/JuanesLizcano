@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="396" height="407" viewBox="0 0 396 407" role="img" aria-label="Retrato en ASCII">
+<svg xmlns="http://www.w3.org/2000/svg" width="396" height="415" viewBox="0 0 396 415" role="img" aria-label="Retrato en ASCII">
   <title>whoami</title>
   <defs>
     <clipPath id="r0"><rect x="16" y="34.0" width="0" height="8.4"><animate attributeName="width" from="0" to="365" begin="0.30s" dur="0.5s" calcMode="spline" keySplines="0.22 1 0.36 1" fill="freeze"/></rect></clipPath>
@@ -44,6 +44,7 @@
     <clipPath id="r40"><rect x="16" y="370.0" width="0" height="8.4"><animate attributeName="width" from="0" to="365" begin="1.18s" dur="0.5s" calcMode="spline" keySplines="0.22 1 0.36 1" fill="freeze"/></rect></clipPath>
     <clipPath id="r41"><rect x="16" y="378.4" width="0" height="8.4"><animate attributeName="width" from="0" to="365" begin="1.20s" dur="0.5s" calcMode="spline" keySplines="0.22 1 0.36 1" fill="freeze"/></rect></clipPath>
     <clipPath id="r42"><rect x="16" y="386.8" width="0" height="8.4"><animate attributeName="width" from="0" to="365" begin="1.22s" dur="0.5s" calcMode="spline" keySplines="0.22 1 0.36 1" fill="freeze"/></rect></clipPath>
+    <clipPath id="r43"><rect x="16" y="395.2" width="0" height="8.4"><animate attributeName="width" from="0" to="365" begin="1.25s" dur="0.5s" calcMode="spline" keySplines="0.22 1 0.36 1" fill="freeze"/></rect></clipPath>
   </defs>
   <style>
     text {
@@ -54,49 +55,50 @@
       letter-spacing: 0;
     }
   </style>
-  <rect width="396" height="407" rx="14" fill="#08080A"/>
-  <rect x="0.5" y="0.5" width="395" height="406" rx="14" fill="none" stroke="#1E1E23"/>
-  <text x="16" y="42.0" clip-path="url(#r0)">                  ..:===+=::: .=++::***=..:`:+`:*:.= ::::``                 </text>
-  <text x="16" y="50.4" clip-path="url(#r1)">                 `---:``:-` .  .```  `-` .. .` -+- +. ....                  </text>
-  <text x="16" y="58.8" clip-path="url(#r2)">                 -****=:   ::--------:::::--:` -+- +: :`..                  </text>
-  <text x="16" y="67.2" clip-path="url(#r3)">                `=+=-`.`-=+========----------: -+-.=-  :::-`                </text>
-  <text x="16" y="75.6" clip-path="url(#r4)">                ::`` .=+++========------------ -+-.-+  :-++=                </text>
-  <text x="16" y="84.0" clip-path="url(#r5)">                 `-- --========--------------- :=-`=*     ::                </text>
-  <text x="16" y="92.4" clip-path="url(#r6)">-               :::..--==::````::-:------::-:` :=-`*c.  :                   </text>
-  <text x="16" y="100.8" clip-path="url(#r7)">%.              . ` `:.  .-+**=:``------:::  ` `=-`=*` ..:.                 </text>
-  <text x="16" y="109.2" clip-path="url(#r8)">@s                  `` `c%@@@@@@#= .-::::  -s%s.=-`=+: :- `                 </text>
-  <text x="16" y="117.6" clip-path="url(#r9)">@@+                   -@@@@@@@@@@@c `..`. c@@@%:--.==` -::                  </text>
-  <text x="16" y="126.0" clip-path="url(#r10)">@@@=            `.`   #%@@@@@@@@@@@:     *@@@@@= -`-+  .. `                 </text>
-  <text x="16" y="134.4" clip-path="url(#r11)">@@@@=           #s .=:#SS#@@@@@@@@@- -:: *%@@@@= `-:+                       </text>
-  <text x="16" y="142.8" clip-path="url(#r12)">@@@@@+`       .*sSc@@Ss%SSS#%@@@@@# .-:: .%#%@@c .+=+`                      </text>
-  <text x="16" y="151.2" clip-path="url(#r13)">@@@@@@@S     .@s=%#@@@SS######@@@S. -:``. =##%@%  =++:                      </text>
-  <text x="16" y="159.6" clip-path="url(#r14)">@@@@@@@@*    cs-+cc%@@@#SsSSSsc*=:-=--`.-:.:=+*S  :++-                      </text>
-  <text x="16" y="168.0" clip-path="url(#r15)">*#@@@@@@@-   +@%*:s@@@@@@%%####Sc*=---. ::-:````   +==                      </text>
-  <text x="16" y="176.4" clip-path="url(#r16)"> .+S@@@@@%=  :@-`-#@@@@@@@@@@@@@@%Sc+-.  --------: `+=                      </text>
-  <text x="16" y="184.8" clip-path="url(#r17)">    :*#@@@@*` S*.+c+#@@@@@@@@@@@@@@@%s:   =-------: -=`                     </text>
-  <text x="16" y="193.2" clip-path="url(#r18)">       :c#@@@%S%###**@@@@@@@@@@@@@@@%%+  :-------::. --                     </text>
-  <text x="16" y="201.6" clip-path="url(#r19)">          :+c#%%%@@@c%@@@@@@@@@@@@@@###+==--------::. -                     </text>
-  <text x="16" y="210.0" clip-path="url(#r20)">              .`-+s%%#@@@@@@@@@@@@@@@@@@S==-------::`                       </text>
-  <text x="16" y="218.4" clip-path="url(#r21)">                   -#S%@@@@@@@@@@@@@@@@%s==-------:`                        </text>
-  <text x="16" y="226.8" clip-path="url(#r22)">                    :**%@@@@@@@###S###S*:``------::.                        </text>
-  <text x="16" y="235.2" clip-path="url(#r23)">                     :+*#@@@%%%S#%%@@%##+-:------:`                         </text>
-  <text x="16" y="243.6" clip-path="url(#r24)">                      -+-*#%%%@@@@@@@#c*+==-----:.                          </text>
-  <text x="16" y="252.0" clip-path="url(#r25)">    ... .....          +c*=s@@@@@@@@@@@#+==--::`                            </text>
-  <text x="16" y="260.4" clip-path="url(#r26)">.............          `:=++c%@@@@@@@@@%*+=--:                              </text>
-  <text x="16" y="268.8" clip-path="url(#r27)">..............    .    #%%%%c+c%@@@@@@@%*--:.                               </text>
-  <text x="16" y="277.2" clip-path="url(#r28)">``....... .......     :@@@@@@c-:+#@@@@@%=:.                                 </text>
-  <text x="16" y="285.6" clip-path="url(#r29)">``````..........   .`+c@@@@@@#*-  ..`::.            `+-`                    </text>
-  <text x="16" y="294.0" clip-path="url(#r30)">`````````....`..  .*css@@@@@@@s=:                   -c+:=-                  </text>
-  <text x="16" y="302.4" clip-path="url(#r31)">````````````..`. :::#sc@@@@@@@%c=`                  +cc::=:                 </text>
-  <text x="16" y="310.8" clip-path="url(#r32)">``````````````   +c:=Sc%@@@@@@@#+=:.             .` *ccc.==                 </text>
-  <text x="16" y="319.2" clip-path="url(#r33)">````````````    =sss`*c#@@@@@@@@S+=:.           :::.*cc:`*+-                </text>
-  <text x="16" y="327.6" clip-path="url(#r34)">::````````.    -sssSs-=#@@@@@@@@@s+=:`         --::.*c-:cc**.               </text>
-  <text x="16" y="336.0" clip-path="url(#r35)">::::::`:`     -SsSSsSs`S@@@%%@@@@@c==-:`    . .::::.=`=scccc+               </text>
-  <text x="16" y="344.4" clip-path="url(#r36)">::::-::.      SssSSsSSsc%@@@#@@@@@%*++=--:::` `:::: .+scssscc               </text>
-  <text x="16" y="352.8" clip-path="url(#r37)">--::.        =ssssssSsSSc%@@%%@@@@@#*+=---::  :::`.:csssssscc:              </text>
-  <text x="16" y="361.2" clip-path="url(#r38)">             +ccssssssssc+#@%#@@@@@@S+=---:: `::..=sssssssscc+              </text>
-  <text x="16" y="369.6" clip-path="url(#r39)">             *ccsssssc-:+++@@%%@@@@@@s=--::..:`.`*sssssssscc*c              </text>
-  <text x="16" y="378.0" clip-path="url(#r40)">             *ccccsss-.ssS=%@@#@@@@@@@*-::` :: :*+++cssssscc**              </text>
-  <text x="16" y="386.4" clip-path="url(#r41)">             **cccccc.*ss#=*@@%%@@@@@@s=-: `:` **++=:+sssccc*=              </text>
-  <text x="16" y="394.8" clip-path="url(#r42)">            `*cccccc::ssSS=-c@@%@@@@%c=--  -:` csSss+`csscc**:              </text>
+  <rect width="396" height="415" rx="14" fill="#08080A"/>
+  <rect x="0.5" y="0.5" width="395" height="414" rx="14" fill="none" stroke="#1E1E23"/>
+  <text x="16" y="42.0" clip-path="url(#r0)">                                                                            </text>
+  <text x="16" y="50.4" clip-path="url(#r1)">                                                                            </text>
+  <text x="16" y="58.8" clip-path="url(#r2)">                                                                            </text>
+  <text x="16" y="67.2" clip-path="url(#r3)">                                                                            </text>
+  <text x="16" y="75.6" clip-path="url(#r4)">                                .`=-:-=-=-..                                </text>
+  <text x="16" y="84.0" clip-path="url(#r5)">                              `=*:`..:+*+=--===::`.                         </text>
+  <text x="16" y="92.4" clip-path="url(#r6)">                          .:**+`    ``..  :` .:``-=+-                       </text>
+  <text x="16" y="100.8" clip-path="url(#r7)">                       .:=-=+.  `:``.     ..        =s:                     </text>
+  <text x="16" y="109.2" clip-path="url(#r8)">                    `::::=`.....`...                 `+=                    </text>
+  <text x="16" y="117.6" clip-path="url(#r9)">                   :-:-::`.```.......          .       -+.                  </text>
+  <text x="16" y="126.0" clip-path="url(#r10)">                  ::::::::``.    .........        . .::`-*.                 </text>
+  <text x="16" y="134.4" clip-path="url(#r11)">                 .::::--:... ..   ...   ..        .`..```=+                 </text>
+  <text x="16" y="142.8" clip-path="url(#r12)">                 `:::-:`........                          :`                </text>
+  <text x="16" y="151.2" clip-path="url(#r13)">                `--::```..`.....         .`..            ..`                </text>
+  <text x="16" y="159.6" clip-path="url(#r14)">                ---:````..`.`:--:``:-:`:-=+++=:::`...     `:                </text>
+  <text x="16" y="168.0" clip-path="url(#r15)">               .---`````....=ssscccsSSssSSSSSSSSscccc*+-. ``                </text>
+  <text x="16" y="176.4" clip-path="url(#r16)">               .--:````...:+sSSss*****csSS###%#####%%%#Sc..                 </text>
+  <text x="16" y="184.8" clip-path="url(#r17)">                :-------=cS##Sc=-::::``.`::+csSSs**++==-+-                  </text>
+  <text x="16" y="193.2" clip-path="url(#r18)">                .--=++*+c%%%%S*+**+++==-----=csc=`. .``:::                  </text>
+  <text x="16" y="201.6" clip-path="url(#r19)">                 :=*==**c###S*+=--+*c*:`:=*c+*c*-::--=++*c+                 </text>
+  <text x="16" y="210.0" clip-path="url(#r20)">                -ssss#%%%##SSssc++csSs=--+*++cSS+-=*s+..:c*                 </text>
+  <text x="16" y="218.4" clip-path="url(#r21)">                c*SS##%@@@%%#####sssccccssc+c%%@#*scc*=++s*                 </text>
+  <text x="16" y="226.8" clip-path="url(#r22)">                *c@%cS@@@@@@%##%%SS##SSSS#SS####%%%#SsS#%@@.                </text>
+  <text x="16" y="235.2" clip-path="url(#r23)">                =S#**#@@@@@@%%#%%%SSSsssscsS###%%%##%%%@@@*                 </text>
+  <text x="16" y="243.6" clip-path="url(#r24)">                 +Sc#S@@%%%%########sc****s##SS##%%*cS#%%*                  </text>
+  <text x="16" y="252.0" clip-path="url(#r25)">                  c@%S######SSSS#####SSsscc*======*c*s###=                  </text>
+  <text x="16" y="260.4" clip-path="url(#r26)">                   =sSSSS###SSSSSSSSSSSSSS*:..`.  =#SsS##:                  </text>
+  <text x="16" y="268.8" clip-path="url(#r27)">                     -SsssSSSSSSSSSSSSc+==-------:`-cSSSs`                  </text>
+  <text x="16" y="277.2" clip-path="url(#r28)">                     `#sccsssssSSSSSS*:`:-++++++*+*+:-sSc                   </text>
+  <text x="16" y="285.6" clip-path="url(#r29)">                     .#s******csSSSSs:`-==+***+++++-`.cS-                   </text>
+  <text x="16" y="294.0" clip-path="url(#r30)">                     .#S+==---==+*##s--***++**ccccs*:-s=                    </text>
+  <text x="16" y="302.4" clip-path="url(#r31)">                     `##*:`:`:::::s%%S++**+=:.  .:==-::`.                   </text>
+  <text x="16" y="310.8" clip-path="url(#r32)">                     -##S+`......`:sS##==c**=`  :++-:-c%@@-                 </text>
+  <text x="16" y="319.2" clip-path="url(#r33)">                 `: :%#SSs*-.......*#S%s.::``...-*sSS#@@@S:                 </text>
+  <text x="16" y="327.6" clip-path="url(#r34)">       `::..  .`--` #@%Sscsc+:..   c#s#%:    `-c#%@@@@Sc-.                  </text>
+  <text x="16" y="336.0" clip-path="url(#r35)">   .:====:  ..`:-:.`%@@%Scccc*=-` .S%###`  :c#%@%%%%#+.     ````.           </text>
+  <text x="16" y="344.4" clip-path="url(#r36)">`-=++=--:::`.```:``.s@@@@%#sc*++=:+@%##*.=S%%%%%%%#c*+=.      `:---:`.      </text>
+  <text x="16" y="352.8" clip-path="url(#r37)">*++===---:::`...```.`%@@@@@@%Sc+=+#%%#SS#@@%%%%%%%%#%@@*        .`::----:`..</text>
+  <text x="16" y="361.2" clip-path="url(#r38)">====-:----::`..`:... =@@@@@@@@@%ss%#%%%@%%%%%%%%%%#Ss#S`        ..```::::::-</text>
+  <text x="16" y="369.6" clip-path="url(#r39)">===-::`::-::`  .:.... s@@@@@@@@@@@%%%%%%########%%#SS%#c=.     ...``````````</text>
+  <text x="16" y="378.0" clip-path="url(#r40)">=-::``...`:`.  .`.... .S@@@@@@@@@%%%%################%@@@*:`..    .`````....</text>
+  <text x="16" y="386.4" clip-path="url(#r41)">::```...        `:.... `#@@@@@@%S%%%#################%%##+:::````  .````....</text>
+  <text x="16" y="394.8" clip-path="url(#r42)">````....        .`. ... :%@@@@s.*@%%##########SS#######%@%c=:````   .```....</text>
+  <text x="16" y="403.2" clip-path="url(#r43)">````...                  =@@@S++#@%%###################%%%@@+::`     .......</text>
 </svg>

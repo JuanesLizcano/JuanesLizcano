@@ -23,13 +23,37 @@ ANCHO_CHAR = 4.8     # ancho real de un caracter mono a 8px
 ALTO_LINEA = 8.4
 PISO       = 70      # gris por debajo del cual todo es fondo (espacio)
 
-def construir(ruta_img, salida):
-    im = Image.open(ruta_img).convert("L")
+def construir(ruta_img, salida, recorte=(0.10, 0.04, 0.92, 0.86), contraste=1.5, piso=PISO,
+              corte=(1, 12), gamma=1.0):
+    im = Image.open(ruta_img)
+    if im.mode in ("RGBA", "LA"):
+        # Viene con el fondo ya recortado (rembg). Se compone sobre NEGRO: asi
+        # todo lo que no es el sujeto cae por debajo del piso y sale como
+        # espacio. Es el paso que mas mejora el resultado — sin el, el fondo
+        # (plantas, luces, reflejos) compite con el rostro por los caracteres
+        # densos y el retrato no se lee.
+        alfa = im.split()[-1]
+        fondo = Image.new("RGB", im.size, (0, 0, 0))
+        fondo.paste(im.convert("RGB"), mask=alfa)
+        im = fondo
+    im = im.convert("L")
 
-    # 1) Recortar al sujeto. El avatar trae mucho aire alrededor y, a 76
-    #    columnas, ese aire se come la mitad de la resolucion util.
+    # 0) Quitar el relleno blanco. Al guardar una imagen desde un chat suele
+    #    quedar pegada en una esquina con el resto en blanco; si no se recorta,
+    #    las fracciones de abajo apuntan a la nada. Se busca el rectangulo de
+    #    lo que NO es casi-blanco y se trabaja solo sobre eso.
+    umbral = im.point(lambda p: 255 if p < 245 else 0)
+    caja = umbral.getbbox()
+    if caja and (caja[2] - caja[0]) > 40 and (caja[3] - caja[1]) > 40:
+        im = im.crop(caja)
+
+    # 1) Recortar al sujeto. A 76 columnas cada pixel de aire sobrante se come
+    #    resolucion util, asi que el encuadre importa mas que cualquier ajuste
+    #    posterior. `recorte` va en fracciones (izq, arriba, der, abajo) y se
+    #    aplican YA sobre la foto limpia, no sobre el relleno.
     w, h = im.size
-    im = im.crop((int(w * 0.10), int(h * 0.04), int(w * 0.92), int(h * 0.86)))
+    x0, y0, x1, y1 = recorte
+    im = im.crop((int(w * x0), int(h * y0), int(w * x1), int(h * y1)))
 
     # 2) Suavizar ANTES de reducir. Cada caracter resume ~6x6 pixeles; sin este
     #    paso un pixel suelto del fondo decide el caracter de toda la celda y
@@ -38,8 +62,16 @@ def construir(ruta_img, salida):
 
     # 3) Contraste. La imagen viene oscura (media ~62), asi que sin estirar el
     #    histograma casi todo cae en los dos caracteres mas vacios.
-    im = ImageOps.autocontrast(im, cutoff=(1, 12))
-    im = ImageEnhance.Contrast(im).enhance(1.5)
+    # El recorte del extremo CLARO es el parametro delicado con una foto: si se
+    # recorta mucho, el rostro (que es lo mas brillante) se satura entero y
+    # queda un bloque solido sin facciones.
+    im = ImageOps.autocontrast(im, cutoff=corte)
+    if gamma != 1.0:
+        # Gamma > 1 comprime los altos: reparte el rostro entre varios
+        # caracteres en vez de mandarlo todo al mas denso.
+        tabla = [min(255, int(255 * ((i / 255.0) ** gamma) + 0.5)) for i in range(256)]
+        im = im.point(tabla)
+    im = ImageEnhance.Contrast(im).enhance(contraste)
 
     # Los caracteres son mas altos que anchos (~0.57), asi que hay que
     # comprimir en vertical o el retrato sale estirado al doble de largo.
@@ -56,10 +88,10 @@ def construir(ruta_img, salida):
             # Piso negro: por debajo de esto es fondo y va como espacio. Sin
             # este corte el fondo oscuro no queda vacio sino lleno de puntos,
             # y el retrato se lee como una mancha en vez de una silueta.
-            if g < PISO:
+            if g < piso:
                 fila.append(" ")
                 continue
-            v = (g - PISO) / (255.0 - PISO)   # 0 = fondo, 1 = lo mas claro
+            v = (g - piso) / (255.0 - piso)   # 0 = fondo, 1 = lo mas claro
             # Texto CLARO sobre fondo OSCURO: lo brillante de la foto tiene que
             # ser el caracter mas denso, no al reves. Con la rampa invertida el
             # retrato sale en negativo.
@@ -110,4 +142,26 @@ def construir(ruta_img, salida):
     print(f"{salida}: {COLS}x{filas} caracteres, {ancho}x{alto}px")
 
 if __name__ == "__main__":
-    construir("avatar.png", "retrato.svg")
+    import os, sys
+    # Fuente por defecto: `recorte.png`, la foto CON EL FONDO YA QUITADO.
+    #
+    # El recorte de fondo es el paso que mas cambia el resultado y el que mas
+    # tardo en aparecer aqui. Con la foto cruda, las plantas y las luces del
+    # restaurante competian con el rostro por los caracteres densos y el
+    # retrato no se leia por mucho que se ajustara el contraste. Con el fondo
+    # en negro puro todo lo que no es el sujeto cae bajo el piso y sale como
+    # espacio. Se genero asi (una sola vez, no hace falta repetirlo):
+    #
+    #     from rembg import remove
+    #     remove(Image.open("foto.jpg")).save("recorte.png")
+    #
+    # De paso quito los vasos de la mesa: rembg los considera fondo.
+    #
+    # NOTA: la foto original NO esta en el repo a proposito. Aqui solo vive el
+    # retrato ya convertido, que es lo unico que se publica.
+    fuente = sys.argv[1] if len(sys.argv) > 1 else "recorte.png"
+    if not os.path.exists(fuente):
+        sys.exit(f"No encuentro {fuente} — ver la nota de arriba.")
+    construir(fuente, "retrato.svg",
+              recorte=(0.28, 0.02, 0.82, 0.58),
+              corte=(1, 2), gamma=1.0, contraste=1.2, piso=22)

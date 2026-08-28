@@ -1,2 +1,8 @@
-# Archivos de trabajo para generar el retrato — no van al repo.
+# Andamios locales para generar el retrato.
 prev.html
+__pycache__/
+
+# La foto original y su version sin fondo NO van al repo: en el perfil solo se
+# publica el retrato ya convertido a ASCII.
+foto.jpg
+recorte.png

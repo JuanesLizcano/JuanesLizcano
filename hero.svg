@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="210" viewBox="0 0 860 210" role="img" aria-label="Juan Esteban Lizcano — Founder de mezo POS, Bogotá, Colombia">
-  <title>Juan Esteban Lizcano — Founder · mezo POS</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="210" viewBox="0 0 860 210" role="img" aria-label="Juan Esteban Lizcano — construyo páginas web y software. Bogotá, Colombia">
+  <title>Juan Esteban Lizcano — páginas web y software</title>
 
   <!--
     Animado con SMIL + CSS DENTRO del propio SVG. GitHub sirve el archivo por su
@@ -12,15 +12,15 @@
 
   <defs>
     <linearGradient id="oro" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#C8903F"/>
-      <stop offset="55%"  stop-color="#E4B878"/>
-      <stop offset="100%" stop-color="#C8903F"/>
+      <stop offset="0%"   stop-color="#D6D6DE"/>
+      <stop offset="55%"  stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#D6D6DE"/>
     </linearGradient>
 
     <radialGradient id="brasa" cx="86%" cy="18%" r="58%">
-      <stop offset="0%"   stop-color="#C8903F" stop-opacity="0.20"/>
-      <stop offset="55%"  stop-color="#C8903F" stop-opacity="0.05"/>
-      <stop offset="100%" stop-color="#C8903F" stop-opacity="0"/>
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.20"/>
+      <stop offset="55%"  stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#D6D6DE" stop-opacity="0"/>
     </radialGradient>
 
     <!-- Cortina que descubre el nombre de izquierda a derecha. -->
@@ -42,7 +42,7 @@
 
     <clipPath id="revelaPie">
       <rect x="46" y="140" width="0" height="24">
-        <animate attributeName="width" from="0" to="640"
+        <animate attributeName="width" from="0" to="700"
                  begin="1.5s" dur="0.9s"
                  calcMode="spline" keySplines="0.22 1 0.36 1" fill="freeze"/>
       </rect>
@@ -52,9 +52,9 @@
   <style>
     .mono  { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
     .serif { font-family: Georgia, "Times New Roman", "Nimbus Roman", serif; }
-    .tenue { fill: #7A6A58; }
-    .crema { fill: #F4ECD8; }
-    .oro   { fill: #C8903F; }
+    .tenue { fill: #6E6E7A; }
+    .crema { fill: #F2F2F4; }
+    .oro   { fill: #D6D6DE; }
 
     /* El cursor si late para siempre: es lo unico vivo cuando todo lo demas
        ya se congelo, y es lo que hace que el bloque se sienta una terminal.
@@ -65,15 +65,15 @@
   </style>
 
   <!-- Lienzo -->
-  <rect width="860" height="210" rx="14" fill="#080706"/>
+  <rect width="860" height="210" rx="14" fill="#08080A"/>
   <rect width="860" height="210" rx="14" fill="url(#brasa)"/>
-  <rect x="0.5" y="0.5" width="859" height="209" rx="14" fill="none" stroke="#2A2520"/>
+  <rect x="0.5" y="0.5" width="859" height="209" rx="14" fill="none" stroke="#1E1E23"/>
 
   <!-- Tres puntos de ventana, discretos -->
   <g opacity="0.55">
-    <circle cx="26" cy="20" r="4" fill="#3A322A"/>
-    <circle cx="42" cy="20" r="4" fill="#3A322A"/>
-    <circle cx="58" cy="20" r="4" fill="#3A322A"/>
+    <circle cx="26" cy="20" r="4" fill="#2A2A31"/>
+    <circle cx="42" cy="20" r="4" fill="#2A2A31"/>
+    <circle cx="58" cy="20" r="4" fill="#2A2A31"/>
   </g>
 
   <!-- Prompt -->
@@ -100,11 +100,11 @@
   <!-- Pie -->
   <g clip-path="url(#revelaPie)">
     <text x="46" y="158" class="mono tenue" font-size="13.5" letter-spacing="0.02em">
-      Founder <tspan class="oro">·</tspan> mezo POS <tspan class="oro">·</tspan> Bogotá, Colombia
+      Construyo páginas web y software <tspan class="oro">·</tspan> Bogotá, Colombia
     </text>
   </g>
 
   <!-- Cursor. Un solo rectangulo: el retardo del CSS lo mantiene invisible
        hasta que el resto termino, y de ahi en adelante late solo. -->
-  <rect x="46" y="176" width="9" height="16" rx="1" fill="#C8903F" class="cursor"/>
+  <rect x="46" y="176" width="9" height="16" rx="1" fill="#D6D6DE" class="cursor"/>
 </svg>

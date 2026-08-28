@@ -1,65 +1,60 @@
 <div align="center">
-  <img src="./hero.svg" width="860" alt="Juan Esteban Lizcano — Founder · mezo POS · Bogotá, Colombia" />
+  <img src="./hero.svg" width="860" alt="Juan Esteban Lizcano — construyo páginas web y software. Bogotá, Colombia." />
 </div>
 
 <br />
 
-<div align="center">
-  <a href="https://mezopos.com"><img src="https://img.shields.io/badge/mezopos.com-C8903F?style=flat-square&labelColor=080706" alt="mezopos.com" /></a>
-  &nbsp;
-  <a href="mailto:juaneslizcanom@gmail.com"><img src="https://img.shields.io/badge/escribirme-080706?style=flat-square&labelColor=080706&color=7A6A58" alt="correo" /></a>
-</div>
+<h3><code>juanes@github ~ $ whoami</code></h3>
 
-<br />
-
-<h3><code>juanes@github ~ $ neofetch</code></h3>
-
-<img src="./stack.svg" width="860" alt="Ficha técnica: qué construyo y con qué" />
-
-<br />
+<table>
+  <tr>
+    <td width="400" valign="top"><img src="./retrato.svg" width="396" alt="Retrato en ASCII" /></td>
+    <td width="456" valign="top"><img src="./stack.svg" width="452" alt="Ficha: qué hago y con qué" /></td>
+  </tr>
+</table>
 
 <h3><code>juanes@github ~ $ cat sobre-mi.txt</code></h3>
 
-Construyo **mezo**, un punto de venta para cafeterías, bares y restaurantes en Colombia.
-No es un proyecto de portafolio: hay negocios cobrando con él todos los días, emitiendo
-sus tickets y cuadrando su caja.
+Construyo páginas web y software a la medida — desde una landing que tiene que
+convertir hasta un sistema completo que un negocio usa todos los días para
+trabajar.
 
-Hago producto, diseño y código. Me interesa menos la lista de tecnologías que la pregunta
-que hay detrás de cada pantalla: *¿esto le sirve a alguien que está de pie, con fila,
-a las 8 de la noche?*
+Hago las dos mitades: el diseño y el código. No entrego un Figma para que
+alguien más lo implemente, ni implemento el diseño de alguien más sin
+preguntar por qué. Me interesa la pregunta que hay detrás de cada pantalla:
+*¿esto le sirve a la persona que la va a usar con afán?*
 
-No tengo título. Lo que sé lo aprendí construyendo, leyendo documentación y rompiendo
-cosas en producción — y aprendiendo a no volver a romperlas.
-
-<br />
+No tengo título. Lo que sé lo aprendí construyendo, leyendo documentación y
+rompiendo cosas en producción — y aprendiendo a no volver a romperlas.
 
 <h3><code>juanes@github ~ $ cat como-trabajo.txt</code></h3>
 
-**El diseño no es la capa de encima.** Un POS mal diseñado le cuesta segundos a un cajero
-en cada venta, y esos segundos son la fila de la puerta. Cada decisión visual tiene que
-justificarse en el mostrador, no en Dribbble.
+**El diseño no es la capa de encima.** Una interfaz mal resuelta le cuesta
+segundos a quien la usa, y esos segundos se acumulan. Cada decisión visual
+tiene que justificarse en el uso real, no en un dribbble.
 
-**Lo que toca la plata se prueba, no se supone.** Un total mal calculado o una venta que
-se puede editar después de cobrada no son bugs de interfaz: son plata. Van con reglas en
-la base de datos, no solo con validación en el navegador.
+**Lo que toca la plata se prueba, no se supone.** Un total mal calculado o un
+registro que se puede editar después de cerrado no son bugs de interfaz: son
+plata. Van con reglas en la base de datos, no solo con validación en el
+navegador.
 
-**Lo que falla, que falle ruidoso.** Prefiero un error que se vea a un "guardado ✓" que
-mienta. Un recibo que no se manda tiene que decirlo; un cierre de caja que no cuadra,
-también.
+**Lo que falla, que falle ruidoso.** Prefiero un error que se vea a un
+"guardado ✓" que mienta. Si algo no se pudo mandar, tiene que decirlo.
 
-<br />
-
-<h3><code>juanes@github ~ $ ls -la ./proyectos</code></h3>
+<h3><code>juanes@github ~ $ ls ./trabajos</code></h3>
 
 | | |
 |---|---|
-| **[mezo](https://mezopos.com)** | POS SaaS para gastronomía en Colombia. Mesas, cocina, inventario con recetas, menú QR con autopedido, facturación DIAN y reportes en lenguaje natural. En producción. |
+| **[mezo](https://mezopos.com)** | Punto de venta para cafeterías, bares y restaurantes. Mesas, cocina, inventario con recetas, menú QR con autopedido, facturación electrónica y reportes en lenguaje natural. En producción. |
 | **SmartICFES** | Plataforma de preparación para el examen de Estado. |
-| **CRUX** | PWA de hábitos — un lado personal, más pequeño y más terco. |
+| **TemeT** | Estudio desde donde hago los proyectos por encargo. |
+| **CRUX** | PWA de hábitos. Un lado personal, más pequeño y más terco. |
+
+<h3><code>juanes@github ~ $ ./contacto.sh</code></h3>
+
+¿Tienes algo que construir? Escríbeme: **juaneslizcanom@gmail.com**
 
 <br />
-
-<h3><code>juanes@github ~ $ ./contributions.sh</code></h3>
 
 <div align="center">
   <picture>
@@ -72,5 +67,5 @@ también.
 <br />
 
 <div align="center">
-  <sub><code>hero.svg</code> y <code>stack.svg</code> están hechos a mano en este repo — SVG con animación propia, sin servicios de terceros ni fuentes externas.</sub>
+  <sub><code>hero.svg</code>, <code>retrato.svg</code> y <code>stack.svg</code> están hechos a mano en este repo —<br />SVG con animación propia, sin servicios de terceros ni fuentes externas.</sub>
 </div>
